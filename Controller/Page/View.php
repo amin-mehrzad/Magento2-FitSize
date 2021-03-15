@@ -2,30 +2,17 @@
 namespace KentoSystems\FitTech\Controller\Page;
 class View extends \Magento\Framework\App\Action\Action
 {
-    /**
-     * @var \Magento\Framework\Controller\Result\JsonFactory
-     */
-    protected $resultJsonFactory;
-    /**
-     * @param \Magento\Framework\App\Action\Context $context
-     * @param \Magento\Framework\Controller\Result\JsonFactory $resultJsonFactory
-     */
-    public function __construct(
-       \Magento\Framework\App\Action\Context $context,
-       \Magento\Framework\Controller\Result\JsonFactory $resultJsonFactory)
-{
-       $this->resultJsonFactory = $resultJsonFactory;
-       parent::__construct($context);
-}
-    /**
-     * View  page action
-     *
-     * @return \Magento\Framework\Controller\ResultInterface
-     */
-    public function execute()
-    {
-       $result = $this->resultJsonFactory->create();
-       $data = ['FormName' => 'Body Measurement'];
+	protected $_pageFactory;
+	public function __construct(
+		\Magento\Framework\App\Action\Context $context,
+		\Magento\Framework\View\Result\PageFactory $pageFactory)
+	{
+		$this->_pageFactory = $pageFactory;
+		return parent::__construct($context);
+	}
 
-return $result->setData($data);
-} }
+	public function execute()
+	{
+		return $this->_pageFactory->create();
+	}
+}
