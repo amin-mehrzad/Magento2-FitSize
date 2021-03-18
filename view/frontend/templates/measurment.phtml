@@ -1,272 +1,280 @@
 <div class='container'>
-    <h2>Body Measurment</h2>
-    <h5>Upper Body</h5>
-    <hr>
-    <div class="kento-grid-container">
+    <form class="form" action="<?= $block->getUrl('measurment/page/view'); ?>" method="post">
 
-        <div>
-            <dl cloth-id="3" class="kento-input-column">
-                <dd class="kento-input" onselectstart="return false;" unselectable="on">
-                    <span class="s1 star" title="Neck">Neck</span>
-                    <span class="solon">:</span>
-                    <span data-id="10266" sizefrom="30" sizeto="66" class="range">(Range30-66)</span>
-                    <span data-id="10265" sizefrom="30" sizeto="66" class="range" style="display: none;">(Range11.81-25.98)</span>
-                    <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="30" sizefrominch="11.81" sizetoinch="25.98" sizeto="66" id="10101" inchvalue="0.00" cmvalue="" data-map="sizeMap" title="30-66" onfocus="changeImg('neck')" onfocusout="removeImg('neck')">
-                    <span class="kento-unit">inches</span>
-                </dd>
-                <dd class="kento-input" onselectstart="return false;" unselectable="on">
-                    <span class="s1 star" title="Chest">Chest</span>
-                    <span class="solon">:</span>
-                    <span data-id="10266" sizefrom="66" sizeto="186" class="range">(Range66-186)</span>
-                    <span data-id="10265" sizefrom="66" sizeto="186" class="range" style="display: none;">(Range25.98-73.23)</span>
-                    <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="66" sizefrominch="25.98" sizetoinch="73.23" sizeto="186" id="10102" inchvalue="" cmvalue="" data-map="sizeMap" title="66-186" onfocus="changeImg('chest')" onfocusout="removeImg('chest')">
-                    <span class="kento-unit">inches</span>
-                </dd>
-                <dd class="kento-input" onselectstart="return false;" unselectable="on">
-                    <span class="s1 star" title="Stomach">Stomach</span>
-                    <span class="solon">:</span>
-                    <span data-id="10266" sizefrom="58" sizeto="185" class="range">(Range58-185)</span>
-                    <span data-id="10265" sizefrom="58" sizeto="185" class="range" style="display: none;">(Range22.83-72.83)</span>
-                    <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="58" sizefrominch="22.83" sizetoinch="72.83" sizeto="185" id="10105" inchvalue="" cmvalue="" data-map="sizeMap" onfocus="changeImg('stomach')" onfocusout="removeImg('stomach')">
-                    <span class="kento-unit">inches</span>
-                </dd>
-                <dd class="kento-input" onselectstart="return false;" unselectable="on">
-                    <span class="s1 star" title="Seat">Seat</span>
-                    <span class="solon">:</span>
-                    <span data-id="10266" sizefrom="68" sizeto="200" class="range">(Range68-200)</span>
-                    <span data-id="10265" sizefrom="68" sizeto="200" class="range" style="display: none;">(Range26.77-78.74)</span>
-                    <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="68" sizefrominch="26.77" sizetoinch="78.74" sizeto="200" id="10108" inchvalue="" cmvalue="" data-map="sizeMap" onfocus="changeImg('seat')" onfocusout="removeImg('seat')">
-                    <span class="kento-unit">inches</span>
-                </dd>
-                <dd class="kento-input" onselectstart="return false;" unselectable="on">
-                    <span class="s1 star" title="Bicep">Bicep</span>
-                    <span class="solon">:</span>
-                    <span data-id="10266" sizefrom="19" sizeto="74" class="range">(Range19-74)</span>
-                    <span data-id="10265" sizefrom="19" sizeto="74" class="range" style="display: none;">(Range7.48-29.13)</span>
-                    <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="19" sizefrominch="7.48" sizetoinch="29.13" sizeto="74" id="10110" inchvalue="" cmvalue="" data-map="sizeMap" onfocus="changeImg('bicep')" onfocusout="removeImg('bicep')">
-                    <span class="kento-unit">inches</span>
-                </dd>
-                <dd class="kento-input" onselectstart="return false;" unselectable="on">
-                    <span class="s1 star" title="Shoulder">Shoulder</span>
-                    <span class="solon">:</span>
-                    <span data-id="10266" sizefrom="31" sizeto="72" class="range">(Range31-72)</span>
-                    <span data-id="10265" sizefrom="31" sizeto="72" class="range" style="display: none;">(Range12.20-28.35)</span>
-                    <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="31" sizefrominch="12.20" sizetoinch="28.35" sizeto="72" id="10111" inchvalue="" cmvalue="" data-map="sizeMap" onfocus="changeImg('shoulder')" onfocusout="removeImg('shoulder')">
-                    <span class="kento-unit">inches</span>
-                </dd>
-                <dd class="kento-input" onselectstart="return false;" unselectable="on">
-                    <span class="s1 star" title="Sleeve(L)">Sleeve(L)</span>
-                    <span class="solon">:</span>
-                    <span data-id="10266" sizefrom="25" sizeto="85" class="range">(Range25-85)</span>
-                    <span data-id="10265" sizefrom="25" sizeto="85" class="range" style="display: none;">(Range9.84-33.46)</span>
-                    <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="25" sizefrominch="9.84" sizetoinch="33.46" sizeto="85" id="10113" inchvalue="" cmvalue="" data-map="sizeMap" onfocus="changeImg('sleeveL')" onfocusout="removeImg('sleeveL')">
-                    <span class="kento-unit">inches</span>
-                </dd>
-                <dd class="kento-input" onselectstart="return false;" unselectable="on">
-                    <span class="s1 star" title="Sleeve( R )">Sleeve( R )</span>
-                    <span class="solon">:</span>
-                    <span data-id="10266" sizefrom="25" sizeto="85" class="range">(Range25-85)</span>
-                    <span data-id="10265" sizefrom="25" sizeto="85" class="range" style="display: none;">(Range9.84-33.46)</span>
-                    <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="25" sizefrominch="9.84" sizetoinch="33.46" sizeto="85" id="10114" inchvalue="" cmvalue="" data-map="sizeMap" onfocus="changeImg('sleeveR')" onfocusout="removeImg('sleeveR')">
-                    <span class="kento-unit">inches</span>
-                </dd>
-                <dd class="kento-input" onselectstart="return false;" unselectable="on">
-                    <span class="s1 star" title="Front Shoulder">Front Shoulder</span>
-                    <span class="solon">:</span>
-                    <span data-id="10266" sizefrom="29" sizeto="68" class="range">(Range29-68)</span>
-                    <span data-id="10265" sizefrom="29" sizeto="68" class="range" style="display: none;">(Range11.42-26.77)</span>
-                    <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="29" sizefrominch="11.42" sizetoinch="26.77" sizeto="68" id="10115" inchvalue="" cmvalue="" data-map="sizeMap" onfocus="changeImg('frontShoulder')" onfocusout="removeImg('frontShoulder')">
-                    <span class="kento-unit">inches</span>
-                </dd>
-                <dd class="kento-input" onselectstart="return false;" unselectable="on">
-                    <span class="s1 star" title="Nape to waist">Nape to waist</span>
-                    <span class="solon">:</span>
-                    <span data-id="10266" sizefrom="29" sizeto="63" class="range">(Range29-63)</span>
-                    <span data-id="10265" sizefrom="29" sizeto="63" class="range" style="display: none;">(Range11.42-24.80)</span>
-                    <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="29" sizefrominch="11.42" sizetoinch="24.80" sizeto="63" id="10116" inchvalue="" cmvalue="" data-map="sizeMap" onfocus="changeImg('napeToWaist')" onfocusout="removeImg('napeToWaist')">
-                    <span class="kento-unit">inches</span>
-                </dd>
-                <dd class="kento-input" onselectstart="return false;" unselectable="on">
-                    <span class="s1 star" title="Back Length">Back Length</span>
-                    <span class="solon">:</span>
-                    <span data-id="10266" sizefrom="47" sizeto="105" class="range">(Range47-105)</span>
-                    <span data-id="10265" sizefrom="47" sizeto="105" class="range" style="display: none;">(Range18.50-41.34)</span>
-                    <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="47" sizefrominch="18.50" sizetoinch="41.34" sizeto="105" id="10117" inchvalue="" cmvalue="" data-map="sizeMap" onfocus="changeImg('backLength')" onfocusout="removeImg('backLength')">
-                    <span class="kento-unit">inches</span>
-                </dd>
-                <dd class="kento-input" onselectstart="return false;" unselectable="on">
-                    <span class="s1 star" title="Front Waist Length">Front Waist Length</span>
-                    <span class="solon">:</span>
-                    <span data-id="10266" sizefrom="31" sizeto="75" class="range">(Range31-75)</span>
-                    <span data-id="10265" sizefrom="31" sizeto="75" class="range" style="display: none;">(Range12.20-29.53)</span>
-                    <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="31" sizefrominch="12.20" sizetoinch="29.53" sizeto="75" id="10172" inchvalue="" cmvalue="" data-map="sizeMap" onfocus="changeImg('frontWaistLength')" onfocusout="removeImg('frontWaistLength')">
-                    <span class="kento-unit">inches</span>
-                </dd>
-            </dl>
-        </div>
-        <div class="kento-img-container">
-            <img class="kento-img" style="padding-left:12px" src="https://img.rcmtm.com/size/zh/10101.png" id="neck" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10102.png" id="chest" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10105.png" id="stomach" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10108.png" id="seat" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10110.png" id="bicep" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10111.png" id="shoulder" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10113.png" id="sleeveL" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10114.png" id="sleeveR" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10115.png" id="frontShoulder" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10116.png" id="napeToWaist" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10117.png" id="backLength" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10172.png" id="frontWaistLength" width="239">
-            <p class="kento-explain" id="explain-neck">Place the measuring tape below the Adam's apple and keep the cloth tape 3cm above seventh cervical vertebra and the pit of neck. The tape should be parallel of the neck cross-section. One finger in the tape, It is advisable to slightly tight(Add 2cm is the finished collar size).</p>
-            <p class="kento-explain" id="explain-chest">Run the measuring tape around the fullest part of the chest. Two fingers in the measuring tape, not too tight or too loose.</p>
-            <p class="kento-explain" id="explain-stomach">Take the back waist point as the datum point, run the measuring tape around the abdomen. Two fingers in the measuring tape, not too tight or too loose.</p>
-            <p class="kento-explain" id="explain-seat">Stand naturally and measure around the fullest part of the hips. Two fingers in the measuring tape, not too tight or too loose.</p>
-            <p class="kento-explain" id="explain-bicep">With the arm hanging at customer’s side and relaxed, measure around the bicep at its fullest point. Hold one finger between the bicep and the cloth tape.</p>
-            <p class="kento-explain" id="explain-shoulder">Place the measuring tape where the shoulder points are. The measuring tape should touch the Seventh cervical vertebra.</p>
-            <p class="kento-explain" id="explain-sleeveL">Place one end of the measuring tape where the right shoulder point is. Measure along the arm down to the first knuckle of the middle finger. Deduct 4cm for men' sleeve length.</p>
-            <p class="kento-explain" id="explain-sleeveR">Place one end of the measuring tape where the right shoulder point is. Measure along the arm down to the first knuckle of the middle finger. Deduct 4cm for men' sleeve length.</p>
-            <p class="kento-explain" id="explain-frontShoulder">Keep the measuring tape straight. The starting point is right shoulder point the destination is the left shoulder point.</p>
-            <p class="kento-explain" id="explain-napeToWaist">Place the measuring tape from the seventh cervical vertebra to the white line of the belt.</p>
-            <p class="kento-explain" id="explain-backLength">Keep the cloth tape in the middle of the back. Place the measuring tape from the seventh cervical vertebra to the butt crotch. The data deducts 2cm is the standard men’s back length.Remark: 3cm or more up of the standard length is the short pattern. 3cm or less down of the standard length is the long pattern.</p>
-            <p class="kento-explain" id="explain-frontWaistLength">Place the measuring tape from the shoulder neck point to the white line of the stomach belt.The cloth tape should pass the highest point of the chest.</p>
-        </div>
-    </div>
-    <h5>Lower Body</h5>
-    <hr>
-    <div class="kento-grid-container">
+        <h2>Body Measurment</h2>
+        <h5>Upper Body</h5>
+        <hr>
+        <div class="kento-grid-container">
 
-        <div>
-            <dl cloth-id="2000" class="kento-input-column">
-                <dd class="kento-input" onselectstart="return false;" unselectable="on">
-                    <span class="s1 star" title="Waist">Waist</span>
-                    <span class="solon">:</span>
-                    <span data-id="10266" sizefrom="58" sizeto="190" class="range">(Range58-190)</span>
-                    <span data-id="10265" sizefrom="58" sizeto="190" class="range" style="display: none;">(Range22.83-74.80)</span>
-                    <input type="text" maxlength="6" value="" cloth-id="2000" sizefrom="58" sizefrominch="22.83" sizetoinch="74.80" sizeto="190" id="10120" inchvalue="0.00" cmvalue="" data-map="sizeMap" title="58-190" onfocus="changeImg('waist')" onfocusout="removeImg('waist')">
-                    <span class="kento-unit">inches</span>
-                </dd>
-                <dd class="kento-input" onselectstart="return false;" unselectable="on">
-                    <span class="s1 star" title="Thigh">Thigh</span>
-                    <span class="solon">:</span>
-                    <span data-id="10266" sizefrom="39" sizeto="113" class="range">(Range39-113)</span>
-                    <span data-id="10265" sizefrom="39" sizeto="113" class="range" style="display: none;">(Range15.35-44.49)</span>
-                    <input type="text" maxlength="6" value="" cloth-id="2000" sizefrom="39" sizefrominch="15.35" sizetoinch="44.49" sizeto="113" id="10122" inchvalue="0.00" cmvalue="" data-map="sizeMap" title="39-113" onfocus="changeImg('thigh')" onfocusout="removeImg('thigh')">
-                    <span class="kento-unit">inches</span>
-                </dd>
-                <dd class="kento-input" onselectstart="return false;" unselectable="on">
-                    <span class="s1 star" title="U-rise">U-rise</span>
-                    <span class="solon">:</span>
-                    <span data-id="10266" sizefrom="50" sizeto="120" class="range">(Range50-120)</span>
-                    <span data-id="10265" sizefrom="50" sizeto="120" class="range" style="display: none;">(Range19.69-47.24)</span>
-                    <input type="text" maxlength="6" value="" cloth-id="2000" sizefrom="50" sizefrominch="19.69" sizetoinch="47.24" sizeto="120" id="10123" inchvalue="" cmvalue="" data-map="sizeMap" title="50-120" onfocus="changeImg('URise')" onfocusout="removeImg('URise')">
-                    <span class="kento-unit">inches</span>
-                </dd>
-                <dd class="kento-input" onselectstart="return false;" unselectable="on">
-                    <span class="s1 star" title="Back Waist Height">Back Waist Height</span>
-                    <span class="solon">:</span>
-                    <span data-id="10266" sizefrom="0" sizeto="21" class="range">(Range0-21)</span>
-                    <span data-id="10265" sizefrom="0" sizeto="21" class="range" style="display: none;">(Range0.00-8.27)</span>
-                    <input type="text" maxlength="6" value="" cloth-id="2000" sizefrom="0" sizefrominch="0.00" sizetoinch="8.27" sizeto="21" id="10124" inchvalue="" cmvalue="" data-map="sizeMap" title="0-21" onfocus="changeImg('backWaist')" onfocusout="removeImg('backWaist')">
-                    <span class="kento-unit">inches</span>
-                </dd>
-                <dd class="kento-input" onselectstart="return false;" unselectable="on">
-                    <span class="s1 star" title="Front Waist Height">Front Waist Height</span>
-                    <span class="solon">:</span>
-                    <span data-id="10266" sizefrom="0" sizeto="30" class="range">(Range0-30)</span>
-                    <span data-id="10265" sizefrom="0" sizeto="30" class="range" style="display: none;">(Range0.00-11.81)</span> 
-                    <input type="text" maxlength="6" value="" cloth-id="2000" sizefrom="0" sizefrominch="0.00" sizetoinch="11.81" sizeto="30" id="10125" inchvalue="" cmvalue="" data-map="sizeMap" title="0-30" onfocus="changeImg('frontWaist')" onfocusout="removeImg('frontWaist')">
-                    <span class="kento-unit">inches</span>
-                </dd>
-                <dd class="kento-input" onselectstart="return false;" unselectable="on">
-                    <span class="s1 star" title="Outseam (L)">Outseam (L)</span>
-                    <span class="solon">:</span>
-                    <span data-id="10266" sizefrom="60" sizeto="135" class="range">(Range60-135)</span>
-                    <span data-id="10265" sizefrom="60" sizeto="135" class="range" style="display: none;">(Range23.62-53.15)</span>
-                    <input type="text" maxlength="6" value="" cloth-id="2000" sizefrom="60" sizefrominch="23.62" sizetoinch="53.15" sizeto="135" id="10126" inchvalue="" cmvalue="" data-map="sizeMap" title="60-135" onfocus="changeImg('outseamL')" onfocusout="removeImg('outseamL')">
-                    <span class="kento-unit">inches</span>
-                </dd>
-                <dd class="kento-input" onselectstart="return false;" unselectable="on">
-                    <span class="s1 star" title="Outseam( R )">Outseam( R )</span>
-                    <span class="solon">:</span>
-                    <span data-id="10266" sizefrom="60" sizeto="135" class="range">(Range60-135)</span>
-                    <span data-id="10265" sizefrom="60" sizeto="135" class="range" style="display: none;">(Range23.62-53.15)</span>
-                    <input type="text" maxlength="6" value="" cloth-id="2000" sizefrom="60" sizefrominch="23.62" sizetoinch="53.15" sizeto="135" id="10127" inchvalue="" cmvalue="" data-map="sizeMap" title="60-135" onfocus="changeImg('outseamR')" onfocusout="removeImg('outseamR')">
-                    <span class="kento-unit">inches</span>
-                </dd>
-                <dd class="kento-input" onselectstart="return false;" unselectable="on">
-                    <span class="s1" title="Knee(Finished)">Knee(Finished)</span>
-                    <span class="solon">:</span>
-                    <span data-id="10266" sizefrom="30" sizeto="103" class="range">(Range30-103)</span>
-                    <span data-id="10265" sizefrom="30" sizeto="103" class="range" style="display: none;">(Range11.81-40.55)</span>
-                    <input type="text" maxlength="6" value="" cloth-id="2000" sizefrom="30" sizefrominch="11.81" sizetoinch="40.55" sizeto="103" id="10128" inchvalue="0.00" cmvalue="" data-map="sizeMap" title="30-103" onfocus="changeImg('knee')" onfocusout="removeImg('knee')">
-                    <span class="kento-unit">inches</span>
-                </dd>
-                <dd class="kento-input" onselectstart="return false;" unselectable="on">
-                    <span class="s1" title="Pant Bottom(Finished)">Pant Bottom(Finished)</span>
-                    <span class="solon">:</span>
-                    <span data-id="10266" sizefrom="28" sizeto="80" class="range">(Range28-80)</span>
-                    <span data-id="10265" sizefrom="28" sizeto="80" class="range" style="display: none;">(Range11.02-31.50)</span>
-                    <input type="text" maxlength="6" value="" cloth-id="2000" sizefrom="28" sizefrominch="11.02" sizetoinch="31.50" sizeto="80" id="10129" inchvalue="" cmvalue="" data-map="sizeMap" title="28-80" onfocus="changeImg('pantBottom')" onfocusout="removeImg('pantBottom')">
-                    <span class="kento-unit">inches</span>
-                </dd>
-                <dd class="kento-input" onselectstart="return false;" unselectable="on">
-                    <span class="s1" title="Calf girth">Calf girth</span>
-                    <span class="solon">:</span>
-                    <span data-id="10266" sizefrom="25" sizeto="70" class="range">(Range25-70)</span>
-                    <span data-id="10265" sizefrom="25" sizeto="70" class="range" style="display: none;">(Range9.84-27.56)</span>
-                    <input type="text" maxlength="6" value="" cloth-id="2000" sizefrom="25" sizefrominch="9.84" sizetoinch="27.56" sizeto="70" id="14231" inchvalue="" cmvalue="" data-map="sizeMap" title="25-70" onfocus="changeImg('calfGirth')" onfocusout="removeImg('calfGirth')">
-                    <span class="kento-unit">inches</span>
-                </dd>
-            </dl>
+            <div>
+                <dl cloth-id="3" class="kento-input-column">
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Neck">Neck</span>
+                        <span class="solon">:</span>
+                        <span data-id="10266" sizefrom="30" sizeto="66" class="range">(Range30-66)</span>
+                        <span data-id="10265" sizefrom="30" sizeto="66" class="range" style="display: none;">(Range11.81-25.98)</span>
+                        <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="30" sizefrominch="11.81" sizetoinch="25.98" sizeto="66" id="10101" inchvalue="0.00" cmvalue="" data-map="sizeMap" title="30-66" onfocus="changeImg('neck')" onfocusout="removeImg('neck')">
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Chest">Chest</span>
+                        <span class="solon">:</span>
+                        <span data-id="10266" sizefrom="66" sizeto="186" class="range">(Range66-186)</span>
+                        <span data-id="10265" sizefrom="66" sizeto="186" class="range" style="display: none;">(Range25.98-73.23)</span>
+                        <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="66" sizefrominch="25.98" sizetoinch="73.23" sizeto="186" id="10102" inchvalue="" cmvalue="" data-map="sizeMap" title="66-186" onfocus="changeImg('chest')" onfocusout="removeImg('chest')">
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Stomach">Stomach</span>
+                        <span class="solon">:</span>
+                        <span data-id="10266" sizefrom="58" sizeto="185" class="range">(Range58-185)</span>
+                        <span data-id="10265" sizefrom="58" sizeto="185" class="range" style="display: none;">(Range22.83-72.83)</span>
+                        <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="58" sizefrominch="22.83" sizetoinch="72.83" sizeto="185" id="10105" inchvalue="" cmvalue="" data-map="sizeMap" onfocus="changeImg('stomach')" onfocusout="removeImg('stomach')">
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Seat">Seat</span>
+                        <span class="solon">:</span>
+                        <span data-id="10266" sizefrom="68" sizeto="200" class="range">(Range68-200)</span>
+                        <span data-id="10265" sizefrom="68" sizeto="200" class="range" style="display: none;">(Range26.77-78.74)</span>
+                        <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="68" sizefrominch="26.77" sizetoinch="78.74" sizeto="200" id="10108" inchvalue="" cmvalue="" data-map="sizeMap" onfocus="changeImg('seat')" onfocusout="removeImg('seat')">
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Bicep">Bicep</span>
+                        <span class="solon">:</span>
+                        <span data-id="10266" sizefrom="19" sizeto="74" class="range">(Range19-74)</span>
+                        <span data-id="10265" sizefrom="19" sizeto="74" class="range" style="display: none;">(Range7.48-29.13)</span>
+                        <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="19" sizefrominch="7.48" sizetoinch="29.13" sizeto="74" id="10110" inchvalue="" cmvalue="" data-map="sizeMap" onfocus="changeImg('bicep')" onfocusout="removeImg('bicep')">
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Shoulder">Shoulder</span>
+                        <span class="solon">:</span>
+                        <span data-id="10266" sizefrom="31" sizeto="72" class="range">(Range31-72)</span>
+                        <span data-id="10265" sizefrom="31" sizeto="72" class="range" style="display: none;">(Range12.20-28.35)</span>
+                        <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="31" sizefrominch="12.20" sizetoinch="28.35" sizeto="72" id="10111" inchvalue="" cmvalue="" data-map="sizeMap" onfocus="changeImg('shoulder')" onfocusout="removeImg('shoulder')">
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Sleeve(L)">Sleeve(L)</span>
+                        <span class="solon">:</span>
+                        <span data-id="10266" sizefrom="25" sizeto="85" class="range">(Range25-85)</span>
+                        <span data-id="10265" sizefrom="25" sizeto="85" class="range" style="display: none;">(Range9.84-33.46)</span>
+                        <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="25" sizefrominch="9.84" sizetoinch="33.46" sizeto="85" id="10113" inchvalue="" cmvalue="" data-map="sizeMap" onfocus="changeImg('sleeveL')" onfocusout="removeImg('sleeveL')">
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Sleeve( R )">Sleeve( R )</span>
+                        <span class="solon">:</span>
+                        <span data-id="10266" sizefrom="25" sizeto="85" class="range">(Range25-85)</span>
+                        <span data-id="10265" sizefrom="25" sizeto="85" class="range" style="display: none;">(Range9.84-33.46)</span>
+                        <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="25" sizefrominch="9.84" sizetoinch="33.46" sizeto="85" id="10114" inchvalue="" cmvalue="" data-map="sizeMap" onfocus="changeImg('sleeveR')" onfocusout="removeImg('sleeveR')">
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Front Shoulder">Front Shoulder</span>
+                        <span class="solon">:</span>
+                        <span data-id="10266" sizefrom="29" sizeto="68" class="range">(Range29-68)</span>
+                        <span data-id="10265" sizefrom="29" sizeto="68" class="range" style="display: none;">(Range11.42-26.77)</span>
+                        <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="29" sizefrominch="11.42" sizetoinch="26.77" sizeto="68" id="10115" inchvalue="" cmvalue="" data-map="sizeMap" onfocus="changeImg('frontShoulder')" onfocusout="removeImg('frontShoulder')">
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Nape to waist">Nape to waist</span>
+                        <span class="solon">:</span>
+                        <span data-id="10266" sizefrom="29" sizeto="63" class="range">(Range29-63)</span>
+                        <span data-id="10265" sizefrom="29" sizeto="63" class="range" style="display: none;">(Range11.42-24.80)</span>
+                        <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="29" sizefrominch="11.42" sizetoinch="24.80" sizeto="63" id="10116" inchvalue="" cmvalue="" data-map="sizeMap" onfocus="changeImg('napeToWaist')" onfocusout="removeImg('napeToWaist')">
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Back Length">Back Length</span>
+                        <span class="solon">:</span>
+                        <span data-id="10266" sizefrom="47" sizeto="105" class="range">(Range47-105)</span>
+                        <span data-id="10265" sizefrom="47" sizeto="105" class="range" style="display: none;">(Range18.50-41.34)</span>
+                        <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="47" sizefrominch="18.50" sizetoinch="41.34" sizeto="105" id="10117" inchvalue="" cmvalue="" data-map="sizeMap" onfocus="changeImg('backLength')" onfocusout="removeImg('backLength')">
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Front Waist Length">Front Waist Length</span>
+                        <span class="solon">:</span>
+                        <span data-id="10266" sizefrom="31" sizeto="75" class="range">(Range31-75)</span>
+                        <span data-id="10265" sizefrom="31" sizeto="75" class="range" style="display: none;">(Range12.20-29.53)</span>
+                        <input type="text" maxlength="6" value="" cloth-id="3" sizefrom="31" sizefrominch="12.20" sizetoinch="29.53" sizeto="75" id="10172" inchvalue="" cmvalue="" data-map="sizeMap" onfocus="changeImg('frontWaistLength')" onfocusout="removeImg('frontWaistLength')">
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                </dl>
+            </div>
+            <div class="kento-img-container">
+                <img class="kento-img" style="padding-left:12px" src="https://img.rcmtm.com/size/zh/10101.png" id="neck" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10102.png" id="chest" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10105.png" id="stomach" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10108.png" id="seat" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10110.png" id="bicep" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10111.png" id="shoulder" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10113.png" id="sleeveL" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10114.png" id="sleeveR" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10115.png" id="frontShoulder" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10116.png" id="napeToWaist" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10117.png" id="backLength" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10172.png" id="frontWaistLength" width="239">
+                <p class="kento-explain" id="explain-neck">Place the measuring tape below the Adam's apple and keep the cloth tape 3cm above seventh cervical vertebra and the pit of neck. The tape should be parallel of the neck cross-section. One finger in the tape, It is advisable to slightly tight(Add 2cm is the finished collar size).</p>
+                <p class="kento-explain" id="explain-chest">Run the measuring tape around the fullest part of the chest. Two fingers in the measuring tape, not too tight or too loose.</p>
+                <p class="kento-explain" id="explain-stomach">Take the back waist point as the datum point, run the measuring tape around the abdomen. Two fingers in the measuring tape, not too tight or too loose.</p>
+                <p class="kento-explain" id="explain-seat">Stand naturally and measure around the fullest part of the hips. Two fingers in the measuring tape, not too tight or too loose.</p>
+                <p class="kento-explain" id="explain-bicep">With the arm hanging at customer’s side and relaxed, measure around the bicep at its fullest point. Hold one finger between the bicep and the cloth tape.</p>
+                <p class="kento-explain" id="explain-shoulder">Place the measuring tape where the shoulder points are. The measuring tape should touch the Seventh cervical vertebra.</p>
+                <p class="kento-explain" id="explain-sleeveL">Place one end of the measuring tape where the right shoulder point is. Measure along the arm down to the first knuckle of the middle finger. Deduct 4cm for men' sleeve length.</p>
+                <p class="kento-explain" id="explain-sleeveR">Place one end of the measuring tape where the right shoulder point is. Measure along the arm down to the first knuckle of the middle finger. Deduct 4cm for men' sleeve length.</p>
+                <p class="kento-explain" id="explain-frontShoulder">Keep the measuring tape straight. The starting point is right shoulder point the destination is the left shoulder point.</p>
+                <p class="kento-explain" id="explain-napeToWaist">Place the measuring tape from the seventh cervical vertebra to the white line of the belt.</p>
+                <p class="kento-explain" id="explain-backLength">Keep the cloth tape in the middle of the back. Place the measuring tape from the seventh cervical vertebra to the butt crotch. The data deducts 2cm is the standard men’s back length.Remark: 3cm or more up of the standard length is the short pattern. 3cm or less down of the standard length is the long pattern.</p>
+                <p class="kento-explain" id="explain-frontWaistLength">Place the measuring tape from the shoulder neck point to the white line of the stomach belt.The cloth tape should pass the highest point of the chest.</p>
+            </div>
         </div>
-        <div class="kento-img-container">
-            <img class="kento-img" style="padding-left:12px" src="https://img.rcmtm.com/size/zh/10101.png" id="neck" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10102.png" id="chest" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10105.png" id="stomach" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10108.png" id="seat" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10110.png" id="bicep" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10111.png" id="shoulder" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10113.png" id="sleeveL" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10114.png" id="sleeveR" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10115.png" id="frontShoulder" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10116.png" id="napeToWaist" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10117.png" id="backLength" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10172.png" id="frontWaistLength" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10120.png" id="waist" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10122.png" id="thigh" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10123.png" id="URise" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10124.png" id="backWaist" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10125.png" id="frontWaist" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10126.png" id="outseamL" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10127.png" id="outseamR" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10128.png" id="knee" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10129.png" id="pantBottom" width="239">
-            <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10131.png" id="calfGirth" width="239">
+        <h5>Lower Body</h5>
+        <hr>
+        <div class="kento-grid-container">
 
-            <p class="kento-explain" id="explain-neck">Place the measuring tape below the Adam's apple and keep the cloth tape 3cm above seventh cervical vertebra and the pit of neck. The tape should be parallel of the neck cross-section. One finger in the tape, It is advisable to slightly tight(Add 2cm is the finished collar size).</p>
-            <p class="kento-explain" id="explain-chest">Run the measuring tape around the fullest part of the chest. Two fingers in the measuring tape, not too tight or too loose.</p>
-            <p class="kento-explain" id="explain-stomach">Take the back waist point as the datum point, run the measuring tape around the abdomen. Two fingers in the measuring tape, not too tight or too loose.</p>
-            <p class="kento-explain" id="explain-seat">Stand naturally and measure around the fullest part of the hips. Two fingers in the measuring tape, not too tight or too loose.</p>
-            <p class="kento-explain" id="explain-bicep">With the arm hanging at customer’s side and relaxed, measure around the bicep at its fullest point. Hold one finger between the bicep and the cloth tape.</p>
-            <p class="kento-explain" id="explain-shoulder">Place the measuring tape where the shoulder points are. The measuring tape should touch the Seventh cervical vertebra.</p>
-            <p class="kento-explain" id="explain-sleeveL">Place one end of the measuring tape where the right shoulder point is. Measure along the arm down to the first knuckle of the middle finger. Deduct 4cm for men' sleeve length.</p>
-            <p class="kento-explain" id="explain-sleeveR">Place one end of the measuring tape where the right shoulder point is. Measure along the arm down to the first knuckle of the middle finger. Deduct 4cm for men' sleeve length.</p>
-            <p class="kento-explain" id="explain-frontShoulder">Keep the measuring tape straight. The starting point is right shoulder point the destination is the left shoulder point.</p>
-            <p class="kento-explain" id="explain-napeToWaist">Place the measuring tape from the seventh cervical vertebra to the white line of the belt.</p>
-            <p class="kento-explain" id="explain-backLength">Keep the cloth tape in the middle of the back. Place the measuring tape from the seventh cervical vertebra to the butt crotch. The data deducts 2cm is the standard men’s back length.Remark: 3cm or more up of the standard length is the short pattern. 3cm or less down of the standard length is the long pattern.</p>
-            <p class="kento-explain" id="explain-frontWaistLength">Place the measuring tape from the shoulder neck point to the white line of the stomach belt.The cloth tape should pass the highest point of the chest.</p>
-            <p class="kento-explain" id="explain-waist">Measure around the top of the pant waist (not the belt), at the height where customer wants the pants to stay. Two finger in the measuring tape, not too tight or too loose. Can deduct 1cm according to customer dressing habit.</p>
-            <p class="kento-explain" id="explain-thigh">Measure from the crotch point around the fullest part of the thigh. Hold two fingers between the thigh and the cloth tape, not too tight or too loose.</p>
-            <p class="kento-explain" id="explain-URise">Measure from the back of the waistband down to the crotch, and then up to the front of the waistband, to the point where the top of the front waistband would be (with the desired comfort and tightness).</p>
-            <p class="kento-explain" id="explain-backWaist">Place the measuring tape from the white line of the belt to the top of the back waistband. Keep the cloth tape in the middle of the back.</p>
-            <p class="kento-explain" id="explain-frontWaist">Place the measuring tape from the white line of the belt to the top of the front waistband. Keep the cloth tape in the middle of the front.</p>
-            <p class="kento-explain" id="explain-outseamL">Place the measuring tape on the top of the waistband. Measure down the outside of the leg to the ground. Normally deduct 2cm length. Customer can appointed the pant length they prefer.</p>
-            <p class="kento-explain" id="explain-outseamR">Place the measuring tape on the top of the waistband. Measure down the outside of the leg to the ground. Normally deduct 2cm length. Customer can appointed the pant length they prefer.</p>
-            <p class="kento-explain" id="explain-knee"></p>
-            <p class="kento-explain" id="explain-pantBottom"></p>
-            <p class="kento-explain" id="explain-calfGirth">Measure around the fullest part of the calf , Make sure the tape is not too tight.</p>
+            <div>
+                <dl cloth-id="2000" class="kento-input-column">
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Waist">Waist</span>
+                        <span class="solon">:</span>
+                        <span data-id="10266" sizefrom="58" sizeto="190" class="range">(Range58-190)</span>
+                        <span data-id="10265" sizefrom="58" sizeto="190" class="range" style="display: none;">(Range22.83-74.80)</span>
+                        <input type="text" maxlength="6" value="" cloth-id="2000" sizefrom="58" sizefrominch="22.83" sizetoinch="74.80" sizeto="190" id="10120" inchvalue="0.00" cmvalue="" data-map="sizeMap" title="58-190" onfocus="changeImg('waist')" onfocusout="removeImg('waist')">
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Thigh">Thigh</span>
+                        <span class="solon">:</span>
+                        <span data-id="10266" sizefrom="39" sizeto="113" class="range">(Range39-113)</span>
+                        <span data-id="10265" sizefrom="39" sizeto="113" class="range" style="display: none;">(Range15.35-44.49)</span>
+                        <input type="text" maxlength="6" value="" cloth-id="2000" sizefrom="39" sizefrominch="15.35" sizetoinch="44.49" sizeto="113" id="10122" inchvalue="0.00" cmvalue="" data-map="sizeMap" title="39-113" onfocus="changeImg('thigh')" onfocusout="removeImg('thigh')">
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="U-rise">U-rise</span>
+                        <span class="solon">:</span>
+                        <span data-id="10266" sizefrom="50" sizeto="120" class="range">(Range50-120)</span>
+                        <span data-id="10265" sizefrom="50" sizeto="120" class="range" style="display: none;">(Range19.69-47.24)</span>
+                        <input type="text" maxlength="6" value="" cloth-id="2000" sizefrom="50" sizefrominch="19.69" sizetoinch="47.24" sizeto="120" id="10123" inchvalue="" cmvalue="" data-map="sizeMap" title="50-120" onfocus="changeImg('URise')" onfocusout="removeImg('URise')">
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Back Waist Height">Back Waist Height</span>
+                        <span class="solon">:</span>
+                        <span data-id="10266" sizefrom="0" sizeto="21" class="range">(Range0-21)</span>
+                        <span data-id="10265" sizefrom="0" sizeto="21" class="range" style="display: none;">(Range0.00-8.27)</span>
+                        <input type="text" maxlength="6" value="" cloth-id="2000" sizefrom="0" sizefrominch="0.00" sizetoinch="8.27" sizeto="21" id="10124" inchvalue="" cmvalue="" data-map="sizeMap" title="0-21" onfocus="changeImg('backWaist')" onfocusout="removeImg('backWaist')">
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Front Waist Height">Front Waist Height</span>
+                        <span class="solon">:</span>
+                        <span data-id="10266" sizefrom="0" sizeto="30" class="range">(Range0-30)</span>
+                        <span data-id="10265" sizefrom="0" sizeto="30" class="range" style="display: none;">(Range0.00-11.81)</span>
+                        <input type="text" maxlength="6" value="" cloth-id="2000" sizefrom="0" sizefrominch="0.00" sizetoinch="11.81" sizeto="30" id="10125" inchvalue="" cmvalue="" data-map="sizeMap" title="0-30" onfocus="changeImg('frontWaist')" onfocusout="removeImg('frontWaist')">
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Outseam (L)">Outseam (L)</span>
+                        <span class="solon">:</span>
+                        <span data-id="10266" sizefrom="60" sizeto="135" class="range">(Range60-135)</span>
+                        <span data-id="10265" sizefrom="60" sizeto="135" class="range" style="display: none;">(Range23.62-53.15)</span>
+                        <input type="text" maxlength="6" value="" cloth-id="2000" sizefrom="60" sizefrominch="23.62" sizetoinch="53.15" sizeto="135" id="10126" inchvalue="" cmvalue="" data-map="sizeMap" title="60-135" onfocus="changeImg('outseamL')" onfocusout="removeImg('outseamL')">
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Outseam( R )">Outseam( R )</span>
+                        <span class="solon">:</span>
+                        <span data-id="10266" sizefrom="60" sizeto="135" class="range">(Range60-135)</span>
+                        <span data-id="10265" sizefrom="60" sizeto="135" class="range" style="display: none;">(Range23.62-53.15)</span>
+                        <input type="text" maxlength="6" value="" cloth-id="2000" sizefrom="60" sizefrominch="23.62" sizetoinch="53.15" sizeto="135" id="10127" inchvalue="" cmvalue="" data-map="sizeMap" title="60-135" onfocus="changeImg('outseamR')" onfocusout="removeImg('outseamR')">
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1" title="Knee(Finished)">Knee(Finished)</span>
+                        <span class="solon">:</span>
+                        <span data-id="10266" sizefrom="30" sizeto="103" class="range">(Range30-103)</span>
+                        <span data-id="10265" sizefrom="30" sizeto="103" class="range" style="display: none;">(Range11.81-40.55)</span>
+                        <input type="text" maxlength="6" value="" cloth-id="2000" sizefrom="30" sizefrominch="11.81" sizetoinch="40.55" sizeto="103" id="10128" inchvalue="0.00" cmvalue="" data-map="sizeMap" title="30-103" onfocus="changeImg('knee')" onfocusout="removeImg('knee')">
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1" title="Pant Bottom(Finished)">Pant Bottom(Finished)</span>
+                        <span class="solon">:</span>
+                        <span data-id="10266" sizefrom="28" sizeto="80" class="range">(Range28-80)</span>
+                        <span data-id="10265" sizefrom="28" sizeto="80" class="range" style="display: none;">(Range11.02-31.50)</span>
+                        <input type="text" maxlength="6" value="" cloth-id="2000" sizefrom="28" sizefrominch="11.02" sizetoinch="31.50" sizeto="80" id="10129" inchvalue="" cmvalue="" data-map="sizeMap" title="28-80" onfocus="changeImg('pantBottom')" onfocusout="removeImg('pantBottom')">
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1" title="Calf girth">Calf girth</span>
+                        <span class="solon">:</span>
+                        <span data-id="10266" sizefrom="25" sizeto="70" class="range">(Range25-70)</span>
+                        <span data-id="10265" sizefrom="25" sizeto="70" class="range" style="display: none;">(Range9.84-27.56)</span>
+                        <input type="text" maxlength="6" value="" cloth-id="2000" sizefrom="25" sizefrominch="9.84" sizetoinch="27.56" sizeto="70" id="14231" inchvalue="" cmvalue="" data-map="sizeMap" title="25-70" onfocus="changeImg('calfGirth')" onfocusout="removeImg('calfGirth')">
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                </dl>
+            </div>
+            <div class="kento-img-container">
+                <img class="kento-img" style="padding-left:12px" src="https://img.rcmtm.com/size/zh/10101.png" id="neck" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10102.png" id="chest" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10105.png" id="stomach" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10108.png" id="seat" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10110.png" id="bicep" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10111.png" id="shoulder" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10113.png" id="sleeveL" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10114.png" id="sleeveR" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10115.png" id="frontShoulder" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10116.png" id="napeToWaist" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10117.png" id="backLength" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10172.png" id="frontWaistLength" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10120.png" id="waist" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10122.png" id="thigh" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10123.png" id="URise" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10124.png" id="backWaist" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10125.png" id="frontWaist" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10126.png" id="outseamL" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10127.png" id="outseamR" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10128.png" id="knee" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10129.png" id="pantBottom" width="239">
+                <img class="kento-img" style="padding-left:12px; display:none;" src="https://img.rcmtm.com/size/zh/10131.png" id="calfGirth" width="239">
+
+                <p class="kento-explain" id="explain-neck">Place the measuring tape below the Adam's apple and keep the cloth tape 3cm above seventh cervical vertebra and the pit of neck. The tape should be parallel of the neck cross-section. One finger in the tape, It is advisable to slightly tight(Add 2cm is the finished collar size).</p>
+                <p class="kento-explain" id="explain-chest">Run the measuring tape around the fullest part of the chest. Two fingers in the measuring tape, not too tight or too loose.</p>
+                <p class="kento-explain" id="explain-stomach">Take the back waist point as the datum point, run the measuring tape around the abdomen. Two fingers in the measuring tape, not too tight or too loose.</p>
+                <p class="kento-explain" id="explain-seat">Stand naturally and measure around the fullest part of the hips. Two fingers in the measuring tape, not too tight or too loose.</p>
+                <p class="kento-explain" id="explain-bicep">With the arm hanging at customer’s side and relaxed, measure around the bicep at its fullest point. Hold one finger between the bicep and the cloth tape.</p>
+                <p class="kento-explain" id="explain-shoulder">Place the measuring tape where the shoulder points are. The measuring tape should touch the Seventh cervical vertebra.</p>
+                <p class="kento-explain" id="explain-sleeveL">Place one end of the measuring tape where the right shoulder point is. Measure along the arm down to the first knuckle of the middle finger. Deduct 4cm for men' sleeve length.</p>
+                <p class="kento-explain" id="explain-sleeveR">Place one end of the measuring tape where the right shoulder point is. Measure along the arm down to the first knuckle of the middle finger. Deduct 4cm for men' sleeve length.</p>
+                <p class="kento-explain" id="explain-frontShoulder">Keep the measuring tape straight. The starting point is right shoulder point the destination is the left shoulder point.</p>
+                <p class="kento-explain" id="explain-napeToWaist">Place the measuring tape from the seventh cervical vertebra to the white line of the belt.</p>
+                <p class="kento-explain" id="explain-backLength">Keep the cloth tape in the middle of the back. Place the measuring tape from the seventh cervical vertebra to the butt crotch. The data deducts 2cm is the standard men’s back length.Remark: 3cm or more up of the standard length is the short pattern. 3cm or less down of the standard length is the long pattern.</p>
+                <p class="kento-explain" id="explain-frontWaistLength">Place the measuring tape from the shoulder neck point to the white line of the stomach belt.The cloth tape should pass the highest point of the chest.</p>
+                <p class="kento-explain" id="explain-waist">Measure around the top of the pant waist (not the belt), at the height where customer wants the pants to stay. Two finger in the measuring tape, not too tight or too loose. Can deduct 1cm according to customer dressing habit.</p>
+                <p class="kento-explain" id="explain-thigh">Measure from the crotch point around the fullest part of the thigh. Hold two fingers between the thigh and the cloth tape, not too tight or too loose.</p>
+                <p class="kento-explain" id="explain-URise">Measure from the back of the waistband down to the crotch, and then up to the front of the waistband, to the point where the top of the front waistband would be (with the desired comfort and tightness).</p>
+                <p class="kento-explain" id="explain-backWaist">Place the measuring tape from the white line of the belt to the top of the back waistband. Keep the cloth tape in the middle of the back.</p>
+                <p class="kento-explain" id="explain-frontWaist">Place the measuring tape from the white line of the belt to the top of the front waistband. Keep the cloth tape in the middle of the front.</p>
+                <p class="kento-explain" id="explain-outseamL">Place the measuring tape on the top of the waistband. Measure down the outside of the leg to the ground. Normally deduct 2cm length. Customer can appointed the pant length they prefer.</p>
+                <p class="kento-explain" id="explain-outseamR">Place the measuring tape on the top of the waistband. Measure down the outside of the leg to the ground. Normally deduct 2cm length. Customer can appointed the pant length they prefer.</p>
+                <p class="kento-explain" id="explain-knee"></p>
+                <p class="kento-explain" id="explain-pantBottom"></p>
+                <p class="kento-explain" id="explain-calfGirth">Measure around the fullest part of the calf , Make sure the tape is not too tight.</p>
+            </div>
         </div>
-    </div>
+        <div class="primary">
+            <button type="submit" class="action submit primary" title="<?php /* @escapeNotVerified */ echo __('Submit') ?>">
+                <span><?php /* @escapeNotVerified */ echo __('Submit') ?></span>
+            </button>
+        </div>
+    </form>
 </div>
 <script>
     function changeImg(imgId) {
@@ -288,7 +296,7 @@
         grid-template-columns: auto 239px;
     }
 
-   /* .kento-inner-container {}*/
+    /* .kento-inner-container {}*/
 
     .kento-input-column {
         display: grid;
