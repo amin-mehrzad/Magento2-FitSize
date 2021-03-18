@@ -2,8 +2,6 @@
 
 namespace KentoSystems\FitTech\Controller\Page;
 
-use Magento\Framework\Controller\ResultFactory;
-
 class View extends \Magento\Framework\App\Action\Action
 {
 	protected $_pageFactory;
@@ -22,20 +20,36 @@ class View extends \Magento\Framework\App\Action\Action
 
 		if (!empty($post)) {
 			// Retrieve your form data
-			$firstname   = $post['firstname'];
-			$lastname    = $post['lastname'];
-			$phone       = $post['phone'];
-			$bookingTime = $post['bookingTime'];
+			$neck   = $post['neck'];
+			$chest    = $post['chest'];
+			$stomach       = $post['stomach'];
+			$seat = $post['seat'];
+			$bicep = $post['bicep'];
+			$shoulder = $post['shoulder'];
+			$sleeveL = $post['sleeveL'];
+			$sleeveR = $post['sleeveR'];
+			$frontShoulder = $post['frontShoulder'];
+			$napeToWaist = $post['napeToWaist'];
+			$backLength = $post['backLength'];
+			$waist = $post['waist'];
+			$thigh = $post['thigh'];
+			$URise = $post['URise'];
+			$backWaist = $post['backWaist'];
+			$frontWaist = $post['frontWaist'];
+			$outseamL = $post['outseamL'];
+			$outseamR = $post['outseamR'];
+			$knee = $post['knee'];
+			$pantBottom = $post['pantBottom'];
+			$calfGirth = $post['calfGirth'];
 
 			// Doing-something with...
 
 			// Display the succes form validation message
-			$this->messageManager->addSuccessMessage('Booking done !');
+			$this->messageManager->addSuccessMessage('Measurement saved successfully !');
 
 			// Redirect to your form page (or anywhere you want...)
-			$resultRedirect = $this->resultFactory->create(ResultFactory::TYPE_REDIRECT);
-			$resultRedirect->setUrl('/companymodule/index/booking');
-
+			$resultRedirect = $this->resultRedirectFactory->create(['data'=> $post]);
+			$resultRedirect->setPath('measurment/page/success',$post);
 			return $resultRedirect;
 		}
 		return $this->_pageFactory->create();
