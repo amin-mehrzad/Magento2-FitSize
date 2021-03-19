@@ -2,6 +2,8 @@
 
 namespace KentoSystems\FitTech\Controller\Page;
 
+use phpDocumentor\Reflection\Types\Integer;
+
 class View extends \Magento\Framework\App\Action\Action
 {
 	protected $_pageFactory;
@@ -20,9 +22,9 @@ class View extends \Magento\Framework\App\Action\Action
 
 		if (!empty($post)) {
 			// Retrieve your form data
-			$neck   = $post['neck'];
-			$chest    = $post['chest'];
-			$stomach       = $post['stomach'];
+			$neck = $post['neck'];
+			$chest = $post['chest'];
+			$stomach  = $post['stomach'];
 			$seat = $post['seat'];
 			$bicep = $post['bicep'];
 			$shoulder = $post['shoulder'];
@@ -43,6 +45,17 @@ class View extends \Magento\Framework\App\Action\Action
 			$calfGirth = $post['calfGirth'];
 
 			// Doing-something with...
+			$measurement = $this->_objectManager->create('KentoSystems\FitTech\Model\Measurement');
+
+			$measurement->setOrderId((Integer)$neck);
+			$measurement->setNeck($neck);
+			$measurement->setChest($chest);
+			$measurement->setStomach($stomach);
+			$measurement->setSeat($seat);
+		//	$measurement->setSeat($seat);  //TODO sholder
+			$measurement->setBicep($bicep);
+			$measurement->setSleeveL($sleeveL);
+			$measurement->save();
 
 			// Display the succes form validation message
 			$this->messageManager->addSuccessMessage('Measurement saved successfully !');
