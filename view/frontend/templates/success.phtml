@@ -1,3 +1,249 @@
-<?php 
-echo $block->getTxt(); 
+<?php
+$measurement = $block->getTxt();
+$measurementData = json_decode($measurement, true)
 ?>
+
+<div class='container'>
+    <h4>Measurement Submitted Successfully</h4>
+    <h5>Upper Body</h5>
+    <hr>
+    <div class="kento-grid-container">
+        <div>
+            <dl cloth-id="3" class="kento-input-column">
+                <?php if (isset($measurementData['neck'])) { ?>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Neck">Neck</span>
+                        <span class="solon">:</span>
+                        <span class="kento-value"><?php echo ' ' . $measurementData['neck'] ?></span>
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                <?php }
+                if (isset($measurementData['chest'])) { ?>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Chest">Chest</span>
+                        <span class="solon">:</span>
+                        <span class="kento-value"><?php echo ' ' . $measurementData['chest'] ?></span>
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                <?php }
+                if (isset($measurementData['stomach'])) { ?>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Stomach">Stomach</span>
+                        <span class="solon">:</span>
+                        <span class="kento-value"><?php echo ' ' . $measurementData['stomach'] ?></span>
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                <?php }
+                if (isset($measurementData['seat'])) { ?>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Seat">Seat</span>
+                        <span class="solon">:</span>
+                        <span class="kento-value"><?php echo ' ' . $measurementData['seat'] ?></span>
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                <?php }
+                if (isset($measurementData['bicep'])) { ?>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Bicep">Bicep</span>
+                        <span class="solon">:</span>
+                        <span class="kento-value"><?php echo ' ' . $measurementData['bicep'] ?></span>
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                <?php }
+                if (isset($measurementData['shoulder'])) { ?>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Shoulder">Shoulder</span>
+                        <span class="solon">:</span>
+                        <span class="kento-value"><?php echo ' ' . $measurementData['shoulder'] ?></span>
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                <?php }
+                if (isset($measurementData['sleeveL'])) { ?>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Sleeve(L)">Sleeve( L )</span>
+                        <span class="solon">:</span>
+                        <span class="kento-value"><?php echo ' ' . $measurementData['sleeveL'] ?></span>
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                <?php }
+                if (isset($measurementData['sleeveR'])) { ?>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Sleeve( R )">Sleeve( R )</span>
+                        <span class="solon">:</span>
+                        <span class="kento-value"><?php echo ' ' . $measurementData['sleeveR'] ?></span>
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                <?php }
+                if (isset($measurementData['frontShoulder'])) { ?>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Front Shoulder">Front Shoulder</span>
+                        <span class="solon">:</span>
+                        <span class="kento-value"><?php echo ' ' . $measurementData['frontShoulder'] ?></span>
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                <?php }
+                if (isset($measurementData['napeToWaist'])) { ?>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Nape to waist">Nape to waist</span>
+                        <span class="solon">:</span>
+                        <span class="kento-value"><?php echo ' ' . $measurementData['napeToWaist'] ?></span>
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                <?php }
+                if (isset($measurementData['backLength'])) { ?>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Back Length">Back Length</span>
+                        <span class="solon">:</span>
+                        <span class="kento-value"><?php echo ' ' . $measurementData['backLength'] ?></span>
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                <?php }
+                if (isset($measurementData['frontWaistLength'])) { ?>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Front Waist Length">Front Waist Length</span>
+                        <span class="solon">:</span>
+                        <span class="kento-value"><?php echo ' ' . $measurementData['frontWaistLength'] ?></span>
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                <?php }  ?>
+            </dl>
+        </div>
+    </div>
+
+    <h5>Lower Body</h5>
+    <hr>
+    <div class="kento-grid-container">
+        <div>
+            <dl cloth-id="3" class="kento-input-column">
+                <?php if (isset($measurementData['waist'])) { ?>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Waist">Waist</span>
+                        <span class="solon">:</span>
+                        <span class="kento-value"><?php echo ' ' . $measurementData['waist'] ?></span>
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                <?php }
+                if (isset($measurementData['thigh'])) { ?>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Thigh">Thigh</span>
+                        <span class="solon">:</span>
+                        <span class="kento-value"><?php echo ' ' . $measurementData['thigh'] ?></span>
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                <?php }
+                if (isset($measurementData['URise'])) { ?>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="U-rise">U-rise</span>
+                        <span class="solon">:</span>
+                        <span class="kento-value"><?php echo ' ' . $measurementData['URise'] ?></span>
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                <?php }
+                if (isset($measurementData['frontWaist'])) { ?>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Front Waist Height">Front Waist Height</span>
+                        <span class="solon">:</span>
+                        <span class="kento-value"><?php echo ' ' . $measurementData['frontWaist'] ?></span>
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                <?php }
+                if (isset($measurementData['backWaist'])) { ?>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Back Waist Height">Back Waist Height</span>
+                        <span class="solon">:</span>
+                        <span class="kento-value"><?php echo ' ' . $measurementData['backWaist'] ?></span>
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                <?php }
+                if (isset($measurementData['outseamL'])) { ?>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Outseam (L)">Outseam ( L )</span>
+                        <span class="solon">:</span>
+                        <span class="kento-value"><?php echo ' ' . $measurementData['outseamL'] ?></span>
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                <?php }
+                if (isset($measurementData['outseamR'])) { ?>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1 star" title="Outseam( R )">Outseam( R )</span>
+                        <span class="solon">:</span>
+                        <span class="kento-value"><?php echo ' ' . $measurementData['outseamR'] ?></span>
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                <?php }
+                if (isset($measurementData['knee'])) { ?>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1" title="Knee(Finished)">Knee(Finished)</span>
+                        <span class="solon">:</span>
+                        <span class="kento-value"><?php echo ' ' . $measurementData['knee'] ?></span>
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                <?php }
+                if (isset($measurementData['pantBottom'])) { ?>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1" title="Pant Bottom(Finished)">Pant Bottom(Finished)</span>
+                        <span class="solon">:</span>
+                        <span class="kento-value"><?php echo ' ' . $measurementData['pantBottom'] ?></span>
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                <?php }
+                if (isset($measurementData['calfGirth'])) { ?>
+                    <dd class="kento-input" onselectstart="return false;" unselectable="on">
+                        <span class="s1" title="Calf girth">Calf girth</span>
+                        <span class="solon">:</span>
+                        <span class="kento-value"><?php echo ' ' . $measurementData['calfGirth'] ?></span>
+                        <span class="kento-unit">inches</span>
+                    </dd>
+                <?php }  ?>
+            </dl>
+        </div>
+    </div>
+</div>
+</div>
+
+<style>
+    .kento-grid-container {
+        display: grid;
+        /* grid-template-columns: auto 239px; */
+    }
+
+    /* .kento-inner-container {}*/
+
+    .kento-input-column {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .kento-img-container {
+        max-width: 239px;
+    }
+
+    .kento-input {
+        margin: 0 5px 0 5px;
+        font-size: medium;
+    }
+
+    .kento-unit {
+        color: #666;
+        line-height: 34px;
+        font-size: x-small;
+        padding-left: 15px;
+    }
+
+    .kento-img {
+        display: none;
+    }
+
+    .kento-explain {
+        font-size: small;
+        margin-right: 0px;
+        margin-left: 12px;
+        margin-top: 10px;
+        text-align: justify;
+        display: none;
+    }
+
+    .kento-value {
+        padding-left: 5px;
+    }
+</style>
