@@ -19,7 +19,7 @@ class InstallSchema implements \Magento\Framework\Setup\InstallSchemaInterface
                     'order_id',
                     Table::TYPE_INTEGER,
                     null,
-                    ['unsigned' => true, 'nullable' => false, 'primary' => true]
+                    ['identity' => false,'unsigned' => true, 'nullable' => false, 'primary' => true]
                 )
                 ->addColumn(
                     'neck',
@@ -41,6 +41,12 @@ class InstallSchema implements \Magento\Framework\Setup\InstallSchemaInterface
                 )
                 ->addColumn(
                     'seat',
+                    Table::TYPE_FLOAT,
+                    null,
+                    ['nullable' => true, 'default' => null, 'unsigned' => true,]
+                )
+                ->addColumn(
+                    'shoulder',
                     Table::TYPE_FLOAT,
                     null,
                     ['nullable' => true, 'default' => null, 'unsigned' => true,]

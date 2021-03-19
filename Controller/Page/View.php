@@ -2,8 +2,6 @@
 
 namespace KentoSystems\FitTech\Controller\Page;
 
-use phpDocumentor\Reflection\Types\Integer;
-
 class View extends \Magento\Framework\App\Action\Action
 {
 	protected $_pageFactory;
@@ -26,6 +24,7 @@ class View extends \Magento\Framework\App\Action\Action
 			$chest = $post['chest'];
 			$stomach  = $post['stomach'];
 			$seat = $post['seat'];
+			$shoulder = $post['shoulder'];
 			$bicep = $post['bicep'];
 			$shoulder = $post['shoulder'];
 			$sleeveL = $post['sleeveL'];
@@ -33,6 +32,7 @@ class View extends \Magento\Framework\App\Action\Action
 			$frontShoulder = $post['frontShoulder'];
 			$napeToWaist = $post['napeToWaist'];
 			$backLength = $post['backLength'];
+			$frontWaistLength = $post['frontWaistLength'];
 			$waist = $post['waist'];
 			$thigh = $post['thigh'];
 			$URise = $post['URise'];
@@ -47,15 +47,31 @@ class View extends \Magento\Framework\App\Action\Action
 			// Doing-something with...
 			$measurement = $this->_objectManager->create('KentoSystems\FitTech\Model\Measurement');
 
-			$measurement->setOrderId((Integer)$neck);
+			$measurement->setOrderId(rand());
 			$measurement->setNeck($neck);
 			$measurement->setChest($chest);
 			$measurement->setStomach($stomach);
 			$measurement->setSeat($seat);
-		//	$measurement->setSeat($seat);  //TODO sholder
+		    $measurement->setShoulder($shoulder);  
 			$measurement->setBicep($bicep);
 			$measurement->setSleeveL($sleeveL);
+			$measurement->setSleeveR($sleeveR);
+			$measurement->setFrontShoulder($frontShoulder);
+			$measurement->setNapeToWaist($napeToWaist);
+			$measurement->setBackLength($backLength);
+			$measurement->setFrontWaistLength($frontWaistLength);
+			$measurement->setWaist($waist);
+			$measurement->setThigh($thigh);
+			$measurement->setURise($URise);
+			$measurement->setBackWaist($backWaist);
+			$measurement->setFrontWaist($frontWaist);
+			$measurement->setOutseamL($outseamL);
+			$measurement->setOutseamR($outseamR);
+			$measurement->setKnee($knee);
+			$measurement->setPantBottom($pantBottom);
+			$measurement->setCalfGirth($calfGirth);
 			$measurement->save();
+			//$measurement->unsetData();
 
 			// Display the succes form validation message
 			$this->messageManager->addSuccessMessage('Measurement saved successfully !');

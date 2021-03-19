@@ -15,5 +15,7 @@ class Measurement extends AbstractDb
     public function _construct()
     {
         $this->_init('fittech_measurments_data', 'order_id');
+        $this->_isPkAutoIncrement = false;
+
     }
 }
